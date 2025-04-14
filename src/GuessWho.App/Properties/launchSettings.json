@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GuessWho.App": {
+      "commandName": "Project",
+      "commandLineArgs": "..\\..\\..\\Example\\ServerWebAPI\\bin\\net8.0\\ServerWebAPI.dll -f"
+    }
+  }
+}

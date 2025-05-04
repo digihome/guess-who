@@ -7,17 +7,40 @@
     <OutputPath>bin\</OutputPath>
   </PropertyGroup>
 
+  <!-- Local -->
+  <PropertyGroup>
+    <DateTimeNow>$([System.DateTime]::UtcNow.ToString("yyyyMMdd.HHmm"))</DateTimeNow>
+    <BuildNumber Condition="'$(BuildNumber)' == ''">0</BuildNumber>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Version">
+    <AssemblyVersion>25.5.1</AssemblyVersion>
+    <FileVersion>25.5.1</FileVersion>
+    <!-- Managed by CI -->
+    <Version>25.5.1+$(DateTimeNow).$(BuildNumber)</Version>
+    <InformationalVersion>25.5.1+$(DateTimeNow).$(BuildNumber)</InformationalVersion>
+  </PropertyGroup>
+
+  <PropertyGroup Label="Package">
+    <PackageId>DH.GuessWho.Library</PackageId>
+    <Authors>Maciej Kłusowski</Authors>
+    <Company>DIGIHOME</Company>
+    <PackageOutputPath>..\..\nuget</PackageOutputPath>
+    <RepositoryUrl>https://github.com/digihome/guess-who.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/digihome/guess-who</PackageProjectUrl>
+    <PackageTags>dotnet tool cli utility analyzer inspect detect reflection server webapi wcf signalr soap</PackageTags>
+    <Description>
+      ...
+    </Description>
+    <PackageReleaseNotes>
+      ...
+    </PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>    
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="System.Reflection.MetadataLoadContext" Version="9.0.4" />
   </ItemGroup>
 
-  <PropertyGroup>
-    <PackageId>DH.GuessWho.Library</PackageId>
-    <Version>1.0.0</Version>
-    <Authors>DIGIHOME</Authors>
-    <Description>...</Description>
-    <PackageOutputPath>..\..\nuget</PackageOutputPath>
-    <RepositoryUrl>https://github.com/digihome/guess-who</RepositoryUrl>
-    <PackageTags>dotnet tool;cli;utility</PackageTags>
-  </PropertyGroup>
 </Project>

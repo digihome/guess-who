@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Services;
+﻿using System.Web.Services;
+using GuessWho.Library;
 
 namespace ServerSOAP
 {
@@ -20,7 +17,9 @@ namespace ServerSOAP
         [WebMethod]
         public string HelloWorld()
         {
-            return "Hello World";
+            var result = AppTypeDetector.Detect();
+
+            return $"Detected application type: {result.Display}";
         }
     }
 }

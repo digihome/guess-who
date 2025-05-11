@@ -1,4 +1,9 @@
 using ClientService;
+using GuessWho.Library;
+
+var result = AppTypeDetector.Detect();
+
+Console.WriteLine($"Detected application type: {result.Display}");
 
 var builder = Host.CreateApplicationBuilder(args);
 builder.Services.AddHostedService<Worker>();

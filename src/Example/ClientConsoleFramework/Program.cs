@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using GuessWho.Library;
 
 namespace ClientConsoleFramework
 {
@@ -10,6 +7,9 @@ namespace ClientConsoleFramework
     {
         static void Main(string[] args)
         {
+            var result = AppTypeDetector.Detect();
+
+            Console.WriteLine($"Detected application type: {result.Display}");
         }
     }
 }

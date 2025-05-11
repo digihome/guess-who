@@ -67,6 +67,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\GuessWho.Library\GuessWho.Library.csproj">
+      <Project>{57d838e2-32ac-4b8a-89f8-b2331483cf18}</Project>
+      <Name>GuessWho.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="WebService1.asmx" />
   </ItemGroup>

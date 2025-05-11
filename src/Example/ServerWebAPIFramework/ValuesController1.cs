@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GuessWho.Library;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,16 +10,11 @@ namespace ServerWebAPIFramework
 {
     public class ValuesController1 : ApiController
     {
-        // GET api/<controller>
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
         // GET api/<controller>/5
-        public string Get(int id)
+        public string Get()
         {
-            return "value";
+            var result = AppTypeDetector.Detect();
+            return $"Detected application type: {result.Display}";
         }
 
         // POST api/<controller>

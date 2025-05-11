@@ -8,4 +8,8 @@
     <OutputPath>bin\</OutputPath>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\GuessWho.Library\GuessWho.Library.csproj" />
+  </ItemGroup>
+
 </Project>

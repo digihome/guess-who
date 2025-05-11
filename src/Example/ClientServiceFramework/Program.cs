@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceProcess;
-using System.Text;
-using System.Threading.Tasks;
+using GuessWho.Library;
+
 
 namespace ClientServiceFramework
 {
@@ -14,6 +12,10 @@ namespace ClientServiceFramework
         /// </summary>
         static void Main()
         {
+            var result = AppTypeDetector.Detect();
+
+            Console.WriteLine($"Detected application type: {result.Display}");
+
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {

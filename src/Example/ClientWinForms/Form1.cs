@@ -1,3 +1,4 @@
+using GuessWho.Library;
 namespace ClientWinForms
 {
     public partial class Form1 : Form
@@ -5,6 +6,10 @@ namespace ClientWinForms
         public Form1()
         {
             InitializeComponent();
+
+            var result = AppTypeDetector.Detect();
+
+            label1.Text = $"Detected application type: {result.Display}";
         }
     }
 }

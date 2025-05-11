@@ -8,6 +8,17 @@ namespace GuessWho.Library
     public static class AppTypeDetector
     {
         /// <summary>
+        /// Detects the application type using calling assembly.
+        /// </summary>
+        /// <param name="assembly"></param>
+        /// <returns></returns>
+        public static DetectionResult Detect()
+        {
+            return Detect(Assembly.GetCallingAssembly());
+
+        }
+
+        /// <summary>
         /// Detects the application type from the assembly.
         /// </summary>
         /// <param name="assembly"></param>

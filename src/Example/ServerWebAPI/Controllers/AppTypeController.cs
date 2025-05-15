@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 namespace ServerWebAPI.Controllers
 {

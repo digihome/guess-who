@@ -23,7 +23,7 @@
   </PropertyGroup>
 
   <PropertyGroup Label="Package">
-    <PackageId>DH.GuessWho.Library</PackageId>
+    <PackageId>DigiHome.GuessWho.Library</PackageId>
     <Authors>Maciej Kłusowski</Authors>
     <Company>DIGIHOME</Company>
     <PackageOutputPath>..\..\nuget</PackageOutputPath>

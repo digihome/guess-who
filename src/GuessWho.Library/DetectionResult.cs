@@ -1,4 +1,4 @@
-﻿namespace GuessWho.Library
+﻿namespace DigiHome.GuessWho.Library
 {
     /// <summary>
     /// Detection result class.

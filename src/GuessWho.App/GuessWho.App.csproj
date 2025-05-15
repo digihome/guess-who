@@ -27,7 +27,7 @@
   <PropertyGroup Label="Package">
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>dotnet-guesswho</ToolCommandName>
-    <PackageId>DH.GuessWho.Tool</PackageId>
+    <PackageId>DigiHome.GuessWho.Tool</PackageId>
     <Authors>Maciej Kłusowski</Authors>
     <Company>DIGIHOME</Company>
     <PackageOutputPath>..\..\nuget</PackageOutputPath>

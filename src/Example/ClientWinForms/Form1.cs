@@ -1,4 +1,4 @@
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 namespace ClientWinForms
 {
     public partial class Form1 : Form

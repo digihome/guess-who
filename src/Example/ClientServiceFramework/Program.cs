@@ -1,6 +1,6 @@
 ﻿using System;
 using System.ServiceProcess;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 
 namespace ClientServiceFramework

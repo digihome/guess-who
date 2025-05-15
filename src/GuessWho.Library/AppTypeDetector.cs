@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace GuessWho.Library
+namespace DigiHome.GuessWho.Library
 {
     /// <summary>
     /// Application detection class.

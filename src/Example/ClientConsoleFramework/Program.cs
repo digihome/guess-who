@@ -1,5 +1,5 @@
 ﻿using System;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 namespace ClientConsoleFramework
 {

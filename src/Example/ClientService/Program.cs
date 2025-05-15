@@ -1,5 +1,5 @@
 using ClientService;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 var result = AppTypeDetector.Detect();
 

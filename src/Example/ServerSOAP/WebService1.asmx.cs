@@ -1,5 +1,5 @@
 ﻿using System.Web.Services;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 namespace ServerSOAP
 {

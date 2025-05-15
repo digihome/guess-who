@@ -3,14 +3,14 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.CommandLine;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 using System.Collections.Generic;
 using System.Runtime.Loader;
 using System.Reflection.Metadata;
 using System.Threading.Tasks;
 using Microsoft.VisualBasic;
 
-namespace GuessWho
+namespace DigiHome.GuessWho.App
 {
     internal class Program
     {

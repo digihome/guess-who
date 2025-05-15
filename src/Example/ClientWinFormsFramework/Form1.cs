@@ -1,5 +1,5 @@
 ﻿using System.Windows.Forms;
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 namespace ClientWinFormsFramework
 {

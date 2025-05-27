@@ -1,7 +1,7 @@
 # GuessWho – CLI and Library for Detecting .NET Application Types
 
-[![NuGet CLI](https://img.shields.io/nuget/v/DH.GuessWho.Tool.svg?label=GuessWho.Tool&logo=nuget)](https://www.nuget.org/packages/DH.GuessWho.Tool)
-[![NuGet Library](https://img.shields.io/nuget/v/DH.GuessWho.Library.svg?label=GuessWho.Library&logo=nuget)](https://www.nuget.org/packages/DH.GuessWho.Library)
+[![NuGet CLI](https://img.shields.io/nuget/v/DigiHome.GuessWho.Tool.svg?label=GuessWho.Tool&logo=nuget)](https://www.nuget.org/packages/DigiHome.GuessWho.Tool)
+[![NuGet Library](https://img.shields.io/nuget/v/DigiHome.GuessWho.Library.svg?label=GuessWho.Library&logo=nuget)](https://www.nuget.org/packages/DigiHome.GuessWho.Library)
 ![License](https://img.shields.io/github/license/digihome/guess-who)
 
 **GuessWho** is a command-line tool (CLI) and .NET class library that allows you to determine what kind of application a given .NET assembly is — for example, whether it's a console app, ASP.NET app, Windows Forms, WPF, Worker Service, and more.
@@ -14,12 +14,12 @@ The `GuessWho.App` is packaged as a global .NET CLI tool, and `GuessWho.Library`
 
 - **CLI**:
   ```bash
-  dotnet tool install -g DH.GuessWho.Tool
+  dotnet tool install -g DigiHome.GuessWho.Tool
   ```
 
 - **Library**:
   ```bash
-  dotnet add package DH.GuessWho.Library
+  dotnet add package DigiHome.GuessWho.Library
   ```
 
 ## Usage (CLI)
@@ -53,7 +53,7 @@ dotnet guesswho .\src\Example\ClientService\bin\net8.0\ClientService.dll
 ## Usage in Code
 
 ```csharp
-using GuessWho.Library;
+using DigiHome.GuessWho.Library;
 
 var result = AppTypeDetector.Detect();
 

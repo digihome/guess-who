@@ -15,7 +15,6 @@ namespace DigiHome.GuessWho.Library
         public static DetectionResult Detect()
         {
             return Detect(Assembly.GetCallingAssembly());
-
         }
 
         /// <summary>
